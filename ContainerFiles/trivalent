@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-toolbox:latest
+FROM ghcr.io/secureblue/securecore-main-hardened:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
@@ -6,7 +6,7 @@ LABEL com.github.containers.toolbox="true" \
       maintainer="faeizmahrus@outlook.com"
 
 # Copy the setup scripts and package list
-COPY ../scripts/fedora-sample.sh /
+COPY ../scripts/trivalent.sh /
 COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/fedora-example.packages /
 
