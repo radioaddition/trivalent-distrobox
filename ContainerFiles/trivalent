@@ -1,4 +1,4 @@
-FROM ghcr.io/secureblue/securecore-main-hardened:latest
+FROM ghcr.io/ublue-os/fedora-toolbox:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
@@ -7,7 +7,6 @@ LABEL com.github.containers.toolbox="true" \
 
 # Copy the setup scripts and package list
 COPY ../scripts/trivalent.sh /
-#COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/trivalent.packages /
 
 # Run the setup scripts
