@@ -28,7 +28,6 @@ jobs:
       fail-fast: false
       matrix:
         containerfile: 
-          - boxkit
           - trivalent
     steps:
       # Clone code to runner
