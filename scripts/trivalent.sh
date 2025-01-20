@@ -3,8 +3,7 @@
 # Symlink distrobox shims
 ./distrobox-shims.sh
 
-#./copr.sh enable secureblue/trivalent
-# Update the container and install packages
+./copr.sh enable secureblue/trivalent
+rpm-ostree refresh-md
 rpm-ostree update
-rpm-ostree --enablerepo secureblue/trivalent
 grep -v '^#' ./trivalent.packages | xargs rpm-ostree install -y
