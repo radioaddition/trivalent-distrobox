@@ -7,9 +7,9 @@ LABEL com.github.containers.toolbox="true" \
 
 # Copy the setup scripts and package list
 COPY ../scripts/trivalent.sh /
-COPY ../scripts/distrobox-shims.sh /
+#COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/trivalent.packages /
 
 # Run the setup scripts
-RUN chmod +x trivalent.sh distrobox-shims.sh && /trivalent.sh
-RUN rm /trivalent.sh /distrobox-shims.sh /trivalent.packages
+RUN chmod +x trivalent.sh && /trivalent.sh
+RUN rm /trivalent.sh /trivalent.packages
