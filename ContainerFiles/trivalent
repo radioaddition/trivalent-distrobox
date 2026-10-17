@@ -1,9 +1,8 @@
 FROM ghcr.io/ublue-os/fedora-toolbox:latest
 
 LABEL com.github.containers.toolbox="true" \
-      usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="An example ContainerFile to demonstrate multiple image builds." \
-      maintainer="faeizmahrus@outlook.com"
+      summary="A toolbx/distrobox image for porting the trivalent browser to any OS" \
+      maintainer="radioaddition@pm.me"
 
 # Copy the setup scripts and package list
 COPY ../scripts/trivalent.sh /
